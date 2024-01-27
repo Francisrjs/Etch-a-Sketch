@@ -1,27 +1,29 @@
 .main {
-   display: flex;
-   background-color: red;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  background-color: red;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.container_grid{
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-  border-color: black;
-  border-radius: 3px;
+.container_grid {
+  background-color: rgb(6, 6, 6);
+  display: flex;
+  flex-wrap: wrap;
+  border-color: rgb(255, 255, 255);
+  border-radius: 5px;
   width: 960px;
   height: 500px;
   flex-shrink: 1;
+  color: black;
 }
-.options{
-    background-color: aqua;
-    align-items: center;
-    justify-content: center;
-  
+
+.options {
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
 }
-h1, .options>h1{
+h1,
+.options > h1 {
   text-align: center;
 }
 
@@ -53,6 +55,3 @@ h1, .options>h1{
   border: 4px solid #333;
   box-shadow: -407px 0 0 400px #00fd0a;
 }
-
-        
-      
