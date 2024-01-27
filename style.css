@@ -6,14 +6,15 @@
   align-items: center;
 }
 .container_grid {
-  background-color: rgb(6, 6, 6);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
-  border-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  flex: 1 auto;
+  border-color: rgba(18, 196, 30, 0.507);
+  border-radius: 5px solid;
   width: 960px;
   height: 500px;
-  flex-shrink: 1;
+  overflow: hidden;
   color: black;
 }
 

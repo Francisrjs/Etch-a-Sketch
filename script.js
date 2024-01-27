@@ -1,5 +1,5 @@
 const grid = document.querySelector(".container_grid");
-let gridSize = 100;
+let gridSize = 32;
 
 // creo los cuadrados
 function createGrid() {
@@ -8,11 +8,12 @@ function createGrid() {
 
     // agrego los atributos y clases
     gridSquare.className = "grid_dynamic";
-    gridSquare.innerHTML = "-";
+    gridSquare.innerHTML = " ";
+    gridSquare.style.border = "1px solid black"; // Borde negro
 
-    // Le agrego un evento
+    // Le agrego un evento esto cambia el CSS
     gridSquare.addEventListener("mouseenter", function () {
-      this.style.backgroundColor = "white";
+      this.style.backgroundColor = "black";
       this.style.color = "white";
     });
 
