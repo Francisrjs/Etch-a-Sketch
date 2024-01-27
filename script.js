@@ -1,8 +1,8 @@
-const grid = document.querySelector(".container_grid");
-let gridSize = 32;
+let gridSize = 20;
 
 // creo los cuadrados
 function createGrid() {
+  grid = document.querySelector(".container_grid");
   for (let i = 0; i < gridSize * gridSize; i++) {
     var gridSquare = document.createElement("div");
 
@@ -18,8 +18,8 @@ function createGrid() {
     });
 
     // Ajusto el estilo con la corrección en las comillas
-    gridSquare.style.width = `calc(100% / ${gridSize})`;
-    gridSquare.style.height = `calc(100% / ${gridSize})`;
+    gridSquare.style.width = `calc(${100}%  / ${gridSize})`;
+    gridSquare.style.height = `calc(${100}%  / ${gridSize})`;
 
     // Adjunto el cuadrado al contenedor correcto
     grid.appendChild(gridSquare);
